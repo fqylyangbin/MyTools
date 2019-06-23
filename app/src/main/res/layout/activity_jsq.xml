@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cc"
+    tools:context="com.example.yangbin.myapp.jsqActivity">
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:inputType=""
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_clr"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jspbutton_style"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/c"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_del"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/jspbutton_style"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/d"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_div"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/jspbutton_style"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/除号"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_mul"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/jspbutton_style"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/乘号"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_7"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/_7"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_8"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/_8"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_9"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/_9"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_sub"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/减号"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/_4"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/_5"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/_6"
+            android:textSize="30sp" />
+
+        <Button
+            android:background="@drawable/jspbutton_style"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_add"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/加号"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:background="@drawable/jspbutton_style"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btn_1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:paddingEnd="15sp"
+                    android:paddingBottom="15sp"
+                    android:text="@string/_1"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:background="@drawable/jspbutton_style"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btn_2"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onClick"
+                    android:paddingEnd="15sp"
+                    android:paddingBottom="15sp"
+                    android:text="@string/_2"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:background="@drawable/jspbutton_style"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btn_3"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onClick"
+                    android:paddingEnd="15sp"
+                    android:paddingBottom="15sp"
+                    android:text="@string/_3"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:background="@drawable/jspbutton_style"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btn_0"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:paddingEnd="15sp"
+                    android:paddingBottom="15sp"
+                    android:text="@string/_0"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:background="@drawable/jspbutton_style"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btn_pt"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onClick"
+                    android:paddingEnd="15sp"
+                    android:paddingBottom="15sp"
+                    android:text="@string/点"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_eq"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/jspbutton_style"
+            android:onClick="onClick"
+            android:paddingEnd="15sp"
+            android:paddingBottom="15sp"
+            android:text="@string/等于"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

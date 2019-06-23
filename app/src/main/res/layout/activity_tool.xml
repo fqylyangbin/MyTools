@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.yangbin.myapp.toolActivity"
+    tools:ignore="LabelFor">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_style"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/home"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ReturnHome"
+            android:text="@string/首页" />
+
+        <Button
+            android:id="@+id/tool"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="@string/工具" />
+
+        <Button
+            android:id="@+id/collect"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Collect"
+            android:text="@string/收藏" />
+
+        <Button
+            android:id="@+id/setting"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Setting"
+            android:text="@string/设置" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/jsq"
+        android:layout_width="151dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/todo"
+        android:onClick="Jsq"
+        app:layout_constraintEnd_toStartOf="@+id/fy"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/jsj" />
+
+    <ImageButton
+        android:id="@+id/fy"
+        android:layout_width="151dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/todo"
+        android:onClick="Fy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/fy" />
+
+    <ImageButton
+        android:id="@+id/kcb"
+        android:layout_width="143dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/todo"
+        android:onClick="Kcb"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/rjb"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jsq"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@mipmap/kcb" />
+
+    <ImageButton
+        android:id="@+id/rjb"
+        android:layout_width="151dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/todo"
+        android:onClick="Rjb"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fy"
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@mipmap/rjb" />
+
+</android.support.constraint.ConstraintLayout>

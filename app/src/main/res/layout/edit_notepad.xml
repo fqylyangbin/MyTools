@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="6"
+        android:background="@mipmap/index"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:accessibilityLiveRegion="assertive"
+            android:background="@null"
+
+            android:hint=""
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:singleLine="true"
+            android:textColor="@android:color/background_dark" tools:targetApi="o"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/background_dark"
+            android:orientation="vertical"></LinearLayout>
+
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginEnd="40dp"
+            android:height="350dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint=""
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:lineSpacingExtra="4dp"
+            android:singleLine="false"
+            android:textColor="@android:color/background_dark"
+            tools:targetApi="o" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/editComplete"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:text="@string/确定"
+            android:textStyle="bold"
+            android:textColor="#ff0011" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
