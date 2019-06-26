@@ -2,16 +2,11 @@ package com.example.yangbin.myapp.Collect;
 
 import android.app.Activity;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.VideoView;
 
 import com.example.yangbin.MyTool.R;
 
@@ -19,7 +14,6 @@ public class SelectAct extends Activity implements OnClickListener{
 
 	private Button btn_delete,btn_back;
 
-	private VideoView detail_video;
 	private TextView detail_text;
 	private CollectDB notes;
 	private SQLiteDatabase dbWriter;
@@ -35,8 +29,6 @@ public class SelectAct extends Activity implements OnClickListener{
 
 		btn_delete.setOnClickListener(this);
 		btn_back.setOnClickListener(this);
-		detail_video.setOnClickListener(this);
-
 		notes=new CollectDB(this);
 		dbWriter=notes.getWritableDatabase();//修改权限
 
@@ -57,9 +49,7 @@ public class SelectAct extends Activity implements OnClickListener{
 			case R.id.button_back:
 				finish();
 				break;
-			case R.id.detail_video:
-				detail_video.start();
-				break;
+
 		}
 	}
 
